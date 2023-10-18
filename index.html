@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-  * {
-    box-sizing: border-box;
-  }
+
   
   /* Create two equal columns that floats next to each other */
   .column {
     float: left;
-    width: 50%;
+    width: 100%;
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
+    column-count: 2
   }
+
   
   /* Clear floats after the columns */
   .row:after {
@@ -19,14 +19,133 @@
     display: table;
     clear: both;
   }
+  
+
+  li::marker {
+  color: #122f57;
+  font-size: 1rem;
+}
+
+
+* {box-sizing: border-box;}
+/* body {font-family: Verdana, sans-serif;} */
+.mySlides {display: none;
+  padding: 60px 0;
+  overflow: hidden}
+img {vertical-align: middle;
+max-width: 90%;
+background-color: white;
+}
+/* * {box-sizing: border-box;} */
+body {font-family: 'Times New Roman', serif;}
+/* .mySlides {display: none;}
+img {vertical-align: middle} */
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  border: 2px solid rgb(255, 255, 255);
+  /* padding-left: 300px; */
+}
+
+/* Caption text */
+.text {
+  color: #073c87;
+  font-size: 18px;
+  padding: 30px 1px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.papertext{
+  text-align: center;
+}
+
+.paperinfotext{
+  text-align: center;
+  font-size: 12px;
+  color: #727477;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #073c87;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 2px;
+  background-color: #e2dddd;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #073c87;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#example2 {
+  padding: 10px;
+  box-shadow: 5px 5px 5px #dadada;
+  border-radius: 15px;
+}
+
+div#imageContainer {
+
+  height: 350px;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 40px;
+
+}
+
+
+
+
   </style>
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="https://kit.fontawesome.com/5233524c71.js" crossorigin="anonymous"></script>
 
-  <title>iPortfolio Bootstrap Template - Index</title>
+  <title>Negin Ghamsarian</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -34,6 +153,8 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -45,6 +166,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+ 
 
   <!-- =======================================================
   * Template Name: iPortfolio
@@ -57,6 +179,8 @@
 
 <body>
 
+  
+
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -68,11 +192,11 @@
         <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Negin Ghamsarian</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://scholar.google.com/citations?user=stgToIMAAAAJ&hl=en" class="google scholar"><i class="ai ai-google-scholar ai-1x"></i></a>
+          <a href="https://www.researchgate.net/profile/Negin-Ghamsarian" class="researchgate"><i class="ai ai-researchgate ai-1x"></i></a>
+          <a href="https://orcid.org/0000-0002-0908-8972" class="orcid"><i class="ai ai-orcid ai-1x"></i></a>
+          <a href="https://github.com/Negin-Ghamsarian" class="github"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/negin-ghamsarian-a48462259/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -80,25 +204,182 @@
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#education" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Education</span></a></li>
+          <li><a href="#news" class="nav-link scrollto"><i class="fa fa-newspaper-o"></i><span>News</span></a></li>
+          <li><a href="#Research" class="nav-link scrollto"><i class="fa-solid fa-magnifying-glass"></i><span>Fields of Research</span></a></li>
+          <li><a href="#education" class="nav-link scrollto"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>  
           <li><a href="#employement" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Employement</span></a></li>
-          <li><a href="#papers" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Papers</span></a></li>
-          <li><a href="#Fields of Experties and Research" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Fields of Experties and Research</span></a></li>
-          li><a href="#Academic Services" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Academic Services</span></a></li>
+          <li><a href="#teaching" class="nav-link scrollto"><i class="fa-solid fa-chalkboard-user"></i> <span>Teaching</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="fa-solid fa-code"></i> <span>Computer Skills</span></a></li>
+          <li><a href="#publications" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="#Services" class="nav-link scrollto"><i class="fas fa-book-reader"></i> <span>Academic Services</span></a></li>
+          <li><a href="#Contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
-      <h1>Negin  Ghamsarian</h1>
-      <p>I am a Computer Scientist</p>
-    </div>
-  </section><!-- End Hero -->
+  
 
   <main id="main">
+
+    <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 17</div>
+        <div class = "img"><img src="menu_images/TI_1.png" style="height: 400px" class="center"></div>
+        <div class="text">Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-Training</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 17</div>
+        <img src="menu_images/TI_2.png" style="height: 400px" class="center">
+        <div class="text">Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-Training</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 17</div>
+        <div class = "img"> <img src="menu_images/LensID_1.png" style="height: 400px" class="center"></div>
+        <div class="text">LensID: A CNN-RNN-Based Framework Towards Lens Irregularity Detection in Cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 14</div>
+        <img src="menu_images/LensID_2.png" style="height: 400px" class="center">
+        <div class="text">LensID: A CNN-RNN-Based Framework Towards Lens Irregularity Detection in Cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 14</div>
+        <img src="menu_images/DeepPyramid_1.png" style="height: 400px" class="center">
+        <div class="text">DeepPyramid: Enabling Pyramid View and Deformable Pyramid Reception for Semantic Segmentation in cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">6 / 17</div>
+        <img src="menu_images/DeepPyramid_2.png" style="height: 400px" class="center">
+        <div class="text">DeepPyramid: Enabling Pyramid View and Deformable Pyramid Reception for Semantic Segmentation in cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">7 / 17</div>
+        <img src="menu_images/ReCal_Net_3.png" style="height: 400px" class="center">
+        <div class="text">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">8 / 17</div>
+        <img src="menu_images/ReCal_Net_1.png" style="height: 400px" class="center">
+        <div class="text">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+      </div>
+      
+      <div class="mySlides fade">
+        <div class="numbertext">9 / 17</div>
+        <img src="menu_images/ReCal_Net_2.png" style="height: 400px" class="center">
+        <div class="text">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">10 / 14</div>
+        <img src="menu_images/ReCal_Net_3.png" style="height: 400px" class="center">
+        <div class="text">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">11 / 17</div>
+        <img src="menu_images/ReCal_Net_4.png" style="height: 400px" class="center">
+        <div class="text">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">12 / 17</div>
+        <img src="menu_images/RelComp_1.png" style="height: 400px" class="center">
+        <div class="text">Relevance-Based Compression of Cataract Surgery Videos Using Convolutional Neural Networks</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">13 / 17</div>
+        <img src="menu_images/RelComp_2.png" style="height: 400px" class="center">
+        <div class="text">Relevance-Based Compression of Cataract Surgery Videos Using Convolutional Neural Networks</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">14 / 17</div>
+        <img src="menu_images/RelComp_3.png" style="height: 400px" class="center">
+        <div class="text">Relevance-Based Compression of Cataract Surgery Videos Using Convolutional Neural Networks</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">15 / 17</div>
+        <img src="menu_images/LocalPhase_1.png" style="height: 400px" class="center">
+        <div class="text">Relevance Detection in Cataract Surgery Videos using Spatio-Temporal Action Localization</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">16 / 17</div>
+        <img src="menu_images/DRNet_1.png" style="height: 400px" class="center">
+        <div class="text">Deblurring Cataract Surgery Videos Using a Multi-Scale Deconvolutional Neural Network</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">17 / 17</div>
+        <img src="menu_images/DRNet_2.png" style="height: 400px" class="center">
+        <div class="text">Deblurring Cataract Surgery Videos Using a Multi-Scale Deconvolutional Neural Network</div>
+      </div>
+
+
+      
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span> 
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+      
+      <script>
+      let slideIndex = 0;
+      showSlides();
+      
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+      </script>
+    <!-- <div class="hero-container" data-aos="fade-in">
+      <h1>Negin  Ghamsarian</h1>
+      <p>I am a Deep Learning Enthusiast</p>
+    </div> -->
+  </div>
+  </section><!-- End Hero -->
 
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
@@ -106,7 +387,7 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p> I am a postdoctoral researcher at the Center for AI in Medical Imaging, Department of Medicine, University of Bern. During my Ph.D. studies, which commenced in March 2019, I have been extensively involved in developing deep-learning-oriented solutions for medical applications, particularly in the analysis of surgical videos and volumetric images. My research encompassed a wide range of topics, including supervised, semi-supervised, and self-supervised deep learning methods for image quality enhancement, video action recognition, object detection, and semantic segmentation. These resulted in the development of novel neural network architectures to improve semantic segmentation performance for challenging scenarios such as deformable, scalable, occluded, blurry, transparent, and distorted objects. Moreover, leveraging sequence modeling networks (CNN-RNNs, 3D CNNs, and transformers), I have explored different directions to enhance action recognition, object localization, and instance tracking in surgical videos. I defended my Ph.D. dissertation with the highest grade at Klagenfurt University in Austria in October 2021 and continued my postdoctoral research at the same institution. In February 2022, I joined the "AI for Medical Imaging" laboratory at the University of Bern as a postdoctoral researcher, where my work has primarily focused on "Domain Adaptation for Semantic Segmentation" for both medical and general images.</p>
+
         </div>
 
         <div class="row">
@@ -115,20 +396,10 @@
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birth:</strong> <span>Iran, 10 August 1991</span></li>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
-                  <li><i class="bi bi-chevron-right"></i> <strong>Address:</strong> <span>ARTORG Center for Biomedical Engineering Research, Faculty of Medicine, University of Bern</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>negin.ghamsarian@unibe.ch</span></li>
-                </ul>
-              </div>
-            </div>
+            <p> I am a postdoctoral researcher at the Center for AI in Medical Imaging, Department of Medicine, University of Bern. 
+              <br>During my Ph.D. studies, which commenced in March 2019, I have been involved in developing deep-learning-oriented solutions for medical applications, particularly in the analysis of surgical videos and volumetric images. My research encompassed a wide range of topics, including supervised, semi-supervised, and self-supervised deep learning methods for image quality enhancement, video action recognition, object detection, and semantic segmentation. These resulted in the development of novel neural network architectures to improve semantic segmentation performance for challenging scenarios such as deformable, scalable, occluded, blurry, transparent, and distorted objects. Moreover, leveraging sequence modeling networks (CNN-RNNs, 3D CNNs, and transformers), I have explored different directions to enhance action recognition, object localization, and instance tracking in surgical videos. I defended my Ph.D. dissertation with the highest grade at Klagenfurt University in Austria in October 2021 and continued my postdoctoral research at the same institution. 
+              <br>In February 2022, I joined the "AI for Medical Imaging" laboratory at the University of Bern as a postdoctoral researcher, where my work has primarily focused on "Domain Adaptation for Semantic Segmentation" for both medical and general images.</p>
+        
             <p>
               
             </p>
@@ -138,104 +409,81 @@
       </div>
     </section><!-- End About Section -->
 
-    
-    <!-- ======= Skills Section ======= -->
-    <section id="Computer Skills" class="skills section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Computer Skills</h2>
-          
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="column" >
-
-              <div class="progress">
-                <span class="skill">Python <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">PyTorch <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              <div class="progress">
-                <span class="skill">Tensorflow <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              <div class="progress">
-                <span class="skill">Keras <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              
-            </div>
-            <div class="column" >
-
-              <div class="progress">
-                <span class="skill">Matlab <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              <div class="progress">
-                <span class="skill">Web Programming (HTML, CSS, JavaScript) <i class="val">80%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              <div class="progress">
-                <span class="skill">C++ <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-              <div class="progress">
-                <span class="skill">C <i class="val">70%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-  
-              
-            </div>
-
-            
 
 
-            
+   <!-- ======= News Section ======= -->
+   <section id="news" class="news">
+    <div class="container">
 
-            
-
-
-
-            
-
-          </div>
-
-        </div>
-
+    <div class="section-title">
+        <h2>News</h2>
+        
       </div>
-    </section><!-- End Skills Section -->
+      
+      <strong>Interview:</strong> Deep Learning can contribute to improving surgical outcomes.
+
+      <div style="display: flex;">
+        <div style="margin: 20px">
+          <iframe src="https://www.caim.unibe.ch/ueber_uns/expertinnen_und_experten/interviews/negin_ghamsarian/index_ger.html" height="600" width="600" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+        </div>
+        <div style="margin: 20px">
+          <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Negin Ghamsarian <a href="https://twitter.com/hashtag/unibern?src=hash&amp;ref_src=twsrc%5Etfw">#unibern</a> believes that <a href="https://twitter.com/hashtag/deeplearning?src=hash&amp;ref_src=twsrc%5Etfw">#deeplearning</a> can overcome current constraints in the feasibility of <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a> techniques for surgical video analysis to better predict postoperative complications and allow more precise surgical interventions: <a href="https://t.co/dONUxaiPYO">https://t.co/dONUxaiPYO</a>. <a href="https://t.co/r5WnrzhM2W">pic.twitter.com/r5WnrzhM2W</a></p>&mdash; Universität Bern (@unibern) <a href="https://twitter.com/unibern/status/1696827108842950802?ref_src=twsrc%5Etfw">August 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+      </div>
+
+      <strong>Distinguished Reviewer:</strong> Certificate of Distinction as an IEEE TMI Distinguished Reviewer.
+      <div style="margin: 20px">
+        <iframe src="menu_images/TMI.pdf" height="300" width="600" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+      </div>
+
+    </div>
+
+  </section><!-- End News Section -->
+
+
+
+  <section id="Research" class="Research section-bg">
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Fields of Experties and Research</h2>
+      </div>
+
+      <p><b>Domain:</b></p>
+      <ul>
+        <li>Machine Learning</li>
+        <li>Deep Learning</li>
+        <li>Medical Image and Video Analysis</li>
+        <li>Image Processing</li>
+        <li>Video Processing</li>
+        <li>Computer Vision</li>
+        <li>Information Theory</li>
+      </ul>
+
+      <p><b>Task:</b></p>
+      <ul>
+        <li>Spervised Learning</li>
+        <li>Self-Supervised Learning</li>
+        <li>Semi-Supervised Learning</li>
+        <li>Domain Adaptation</li>
+        <li>Generative Modeling</li>
+      </ul>
+
+      <p><b>Subjects:</b></p>
+      <ul>
+        <li>Semantic Segmentation/Instance Segmentation</li>
+        <li>Action Recognition/Irregularity Detection</li>
+        <li>Object Tracking/Instance Tracking</li>
+      </ul>
+        
+      
+
+    </div>
+  </section>
+
 
     <!-- ======= Resume Section ======= -->
-    <section id="#education" class="resume">
+    <section id="education" class="resume">
       <div class="container">
 
         <div class="section-title">
@@ -254,126 +502,383 @@
             <div class="resume-item">
               <h4>M.Sc. in Electrial Engineering</h4>
               <h5>2013 - 2016</h5>
-              <p><em>Department of Electrical Engineering, Ferdowsi University of Mashhad</em></p>
+              <p><em>Department of Electrical Engineering, Ferdowsi University of Mashhad, Iran</em></p>
               <p>Thesis Title: "Undetectable Video Steganography Based on Statistical Differences of Motion Vectors, Before and After Embedding"</p>
-              <p>Prof. Morteza Khademi</p>
+              <p>Supervisor: <br> Prof. Morteza Khademi <br></p>
+              <p>Examiners: <br> Ass. Prof. Dr. Seyed Alireza Seyedin, Ferdowsi University of Mashhad, Iran <br> Prof. Dr. Raphael Sznitman, Ferdowsi University of Mashhad, Iran</p>
             </div>
           </div>
           
         </div>
 
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+
+    <section id="employement" class="resume section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Employement</h2>
+        </div>
+
+            <div class="resume-item">
+              <h4>Postdoctoral Researcher</h4>
+              <h5>February 2022 -- Now</h5>
+              <p><em>ARTORG Center for Biomedical Engineering Research, Department of Medicine, University of Bern</em></p>
+              
+            </div>
+            <div class="resume-item">
+              <h4>Postdoctoral Researcher</h4>
+              <h5>November 2019 -- December 2021</h5>
+              <p><em>Department of Information Technology, Alpen-Adria-Universität Klagenfurt, Austria</em></p>
+             
+            </div>
+            <div class="resume-item">
+              <h4>Research Assistant</h4>
+              <h5>March 2019 -- October 2021</h5>
+              <p><em>Department of Information Technology, Alpen-Adria-Universität Klagenfurt, Austria</em></p>
+             
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= Resume Section ======= -->
+    <section id="teaching" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Teaching</h2>
+        </div>
+
+            <div class="resume-item">
+              <h4>Biomedical Engineering Laboratories</h4>
+              <h5>2023</h5>
+              <p><em>University of Bern</em></p>
+              <p>Master's Course, Biomedical Engineering</p>
+            </div>
+            <div class="resume-item">
+              <h4>Biomedical Engineering Laboratories</h4>
+              <h5>2022</h5>
+              <p><em>University of Bern</em></p>
+              <p>Master's Course, Biomedical Engineering</p>
+            </div>
+            <div class="resume-item">
+              <h4>Web Technologies</h4>
+              <h5>2020</h5>
+              <p><em>University of Klagenfurt</em></p>
+              <p>Undergraduate Course, Computer Science</p>
+            </div>
+            <div class="resume-item">
+              <h4>Image and Video Processing with Matlab</h4>
+              <h5>2016</h5>
+              <p><em>Ferdowsi University of Mashhsad</em></p>
+              <p>Workshop, Electrical Engineering</p>
+            </div>
+            <div class="resume-item">
+              <h4>Image Processing with Matlab</h4>
+              <h5>2015</h5>
+              <p><em>Ferdowsi University of Mashhsad</em></p>
+              <p>Workshop, Electrical Engineering</p>
+            </div>
+            <div class="resume-item">
+              <h4>Fields and Waves Electromagnetics</h4>
+              <h5>2014</h5>
+              <p><em>Eqbal Institute of Higher Education</em></p>
+              <p>Undergraduate Course, Electrical Engineering-Electronics and Electrical Engineering-Robotics</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- End Resume Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg">
+          <div class="container">
+    
+            <div class="section-title">
+              <h2>Computer Skills</h2>
+              
+            </div>
+    
+            <div class="row skills-content">
+    
+              <div class="col-lg-10" data-aos="fade-up">
+    
+                <div class="column" >
+    
+                
+    
+                  <div class="progress">
+                    <span class="skill">Python <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+    
+                  <div class="progress">
+                    <span class="skill">PyTorch <i class="val">100%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">Tensorflow <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">Keras <i class="val">90%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  
+                <!-- </div>
+                <div class="column" > -->
+    
+                  <div class="progress">
+                    <span class="skill">Matlab <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">Web Programming (HTML, CSS, JavaScript, NodeJS) <i class="val">80%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  <div class="progress">
+                    <span class="skill">C++ <i class="val">70%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                  <div class="progress">
+                    <span class="skill">C <i class="val">70%</i></span>
+                    <div class="progress-bar-wrap">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+      
+                  
+                </div>
+    
+              </div>
+    
+            </div>
+    
+          </div>
+        </section><!-- End Skills Section -->
+
+   
+    <!-- ======= Portfolio Section ======= -->
+    <section id="publications" class="portfolio">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Selected Publications</h2>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-Dissertation">PhD Dissertation</li>
+              <li data-filter=".filter-Conference">Conference Papers</li>
+              <li data-filter=".filter-Journal">Journal Papers</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-Training</div>
+              <div class="paperinfotext">[MICCAI 2023]</div>
+              <div id="imageContainer"><img src="menu_images/TI_1.png" class="center img-fluid" alt=""></div>
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
+                <a href="menu_images/TI_1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-Training"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">DeepPyramid: Enabling Pyramid View and Deformable Pyramid Reception for Semantic Segmentation in cataract Surgery Videos</div>
+              <div class="paperinfotext">[MICCAI 2022]</div>
+              <div id="imageContainer"><img src="menu_images/DeepPyramid_2.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/DeepPyramid_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="DeepPyramid: Enabling Pyramid View and Deformable Pyramid Reception for Semantic Segmentation in cataract Surgery Videos"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">LensID: A CNN-RNN-Based Framework Towards Lens Irregularity Detection in Cataract Surgery Videos</div>
+              <div class="paperinfotext">[MICCAI 2021]</div>
+              <div id="imageContainer"><img src="menu_images/LensID_1.png" class="center img-fluid" alt=""></div>
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/LensID_1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="LensID: A CNN-RNN-Based Framework Towards Lens Irregularity Detection in Cataract Surgery Videos"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos</div>
+              <div class="paperinfotext">[ICONIP 2021]</div>
+              <div id="imageContainer"><img src="menu_images/ReCal_Net_1.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/ReCal_Net_1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="ReCal-Net: Joint Region-Channel-Wise Calibrated Network for Semantic Segmentation in Cataract Surgery Videos"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">Relevance-Based Compression of Cataract Surgery Videos Using Convolutional Neural Networks</div>
+              <div class="paperinfotext">[ACM MM 2020]</div>
+              <div id="imageContainer"><img src="menu_images/RelComp_3.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/RelComp_3.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Relevance-Based Compression of Cataract Surgery Videos Using Convolutional Neural Networks"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">Deblurring Cataract Surgery Videos Using a Multi-Scale Deconvolutional Neural Network</div>
+              <div class="paperinfotext">[ISBI 2020]</div>
+              <div id="imageContainer"><img src="menu_images/DRNet_2.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/DRNet_2.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Deblurring Cataract Surgery Videos Using a Multi-Scale Deconvolutional Neural Network"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">Relevance Detection in Cataract Surgery Videos using Spatio-Temporal Action Localization</div>
+              <div class="paperinfotext">[ICPR 2020]</div>
+              <div id="imageContainer"><img src="menu_images/LocalPhase_1.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/LocalPhase_1.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Relevance Detection in Cataract Surgery Videos using Spatio-Temporal Action Localization"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Conference">
             <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
+            <div class="container" style="height:400px">
+              <div class="papertext">Enabling Relevance-Based Exploration of Cataract Videos</div>
+              <div class="paperinfotext">[ICMR 2020]</div>
+              <div id="imageContainer"><img src="menu_images/RelExp.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
               <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                <a href="menu_images/RelExp.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Enabling Relevance-Based Exploration of Cataract Videos"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Journal">
+            <div class="portfolio-wrap">
+            <div class="container" style="height:400px">
+              <div class="papertext">Blind MV-based Video Steganalysis Based on joint Inter-frame and Intra-frame Statistics</div>
+              <div class="paperinfotext">[MTAP 2020]</div>
+              <div id="imageContainer"><img src="menu_images/Steganalysis.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
+              <div class="portfolio-links">
+                <a href="menu_images/Steganalysis.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Blind MV-based Video Steganalysis Based on joint Inter-frame and Intra-frame Statistics"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Journal">
+            <div class="portfolio-wrap">
+            <div class="container" style="height:400px">
+              <div class="papertext">Undetectable video steganography by considering spatio-temporal steganalytic features in the embedding cost function</div>
+              <div class="paperinfotext">[MTAP 2020]</div>
+              <div id="imageContainer"><img src="menu_images/Steganography.webp" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
+              <div class="portfolio-links">
+                <a href="menu_images/Steganography.webp" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Undetectable video steganography by considering spatio-temporal steganalytic features in the embedding cost function"><i class="bx bx-plus"></i></a>
+                <a href="portfolio-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5 col-md-5 portfolio-item filter-Dissertation">
+            <div class="portfolio-wrap">
+            <div class="container" style="height:400px">
+              <div class="papertext">Deep-Learning-Assisted Analysis of Cataract Surgery Videos</div>
+              <div class="paperinfotext">[MTAP 2020]</div>
+              <div id="imageContainer"><img src="menu_images/Dissertation.png" class="center img-fluid" alt="" style="vertical-align: bottom"></div>
+        
+              
+              <div class="portfolio-links">
+                <a href="menu_images/Dissertation.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Deep-Learning-Assisted Analysis of Cataract Surgery Videos"><i class="bx bx-plus"></i></a>
+                <a href="dissertation-details1.html" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
             </div>
           </div>
 
@@ -382,15 +887,57 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+
+
+
+    <section id="Services" class="Services section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Academic Services</h2>
+        </div>
+
+        <p><b>Journal Review:</b></p>
+        <ul>
+          <li>IEEE Transactions on Medical Imaging (TMI)</li>
+          <li>Medical Image Analysis</li>
+          <li>IEEE Transactions on Multimedia</li>
+          <li>Multimedia Tools and Applications (MTAP)</li>
+          <li>Multimedia Systems</li>
+          <li>Journal of Clinical Medicine</li>
+          <li>Expert Systems with Applications</li>
+        </ul>
+
+        <p><b>Program Committee:</b></p>
+        <ul>
+          <li>International Conference on Medical Image Computing and Computer Assisted Interventions (MICCAI 2023)</li>
+          <li>ACM International Conference on Multimedia Retrieval (ACM ICMR 2021)</li>
+          <li>27th International Conference on Multimedia Modeling (MMM 2021)</li>
+          <li>Fourth Lifelog Search Challenge (LSC'21) at the ACM International Conference on Multimedia Retrieval (ICMR 2021)</li>
+          <li>18th Conference on Content-Based Multimedia Indexing (CBMI 2021)</li>
+          <li>ACM Multimedia Asia (ACM MM Asia 2020)</li>
+          <li>ACM Multimedia Conference 2020 (ACM MM 2020)</li>
+          <li>International Conference on Multimedia Retrieval (ICMR 2020)</li>
+        </ul>
+
+        <p><b>Organization Committee:</b></p>
+        <ul>
+          <li>Best Poster/Demo Committee, ACM International Conference on Multimedia Retrieval (ICMR 2020)</li>
+        </ul>
+          
+        
+
+      </div>
+    </section>
+
     
 
     <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
+    <section id="Contact" class="contact">
       <div class="container">
 
         <div class="section-title">
           <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row" data-aos="fade-in">
@@ -400,22 +947,22 @@
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>ARTORG Center for Biomedical Engineering Research,  Murtenstrasse 50, 3008 Bern, Switzerland</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>negin.ghamsarian@unibe.ch</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+41 31 632 75 91</p>
               </div>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2723.5791411135874!2d7.422112076811575!3d46.95031013306604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39a15c2e27bf%3A0x7e4863bb21cc3be4!2sARTORG%20Center!5e0!3m2!1sen!2sch!4v1696798242590!5m2!1sen!2sch" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 
           </div>
@@ -456,21 +1003,8 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
+  
+  
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

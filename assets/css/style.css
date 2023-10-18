@@ -10,12 +10,12 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Times New Roman', serif;
   color: #272829;
 }
 
 a {
-  color: #149ddd;
+  color: #20445c;
   text-decoration: none;
 }
 
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Times New Roman', serif;
 }
 
 /*--------------------------------------------------------------
@@ -43,7 +43,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #149ddd;
+  background: #14dd8d;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #2eafec;
+  background: #073c87;
   color: #fff;
 }
 
@@ -97,7 +97,7 @@ h6 {
   font-weight: 600;
   -moz-text-align-last: center;
   text-align-last: center;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', serif;
 }
 
 #header .profile h1 a,
@@ -122,10 +122,11 @@ h6 {
 }
 
 #header .profile .social-links a:hover {
-  background: #149ddd;
+  background: #073c87;
   color: #fff;
   text-decoration: none;
 }
+
 
 #main {
   margin-left: 300px;
@@ -202,7 +203,8 @@ h6 {
 .nav-menu .active i,
 .nav-menu .active:focus i,
 .nav-menu li:hover>a i {
-  color: #149ddd;
+  color: #fff;
+  /* #e3e5ec */
 }
 
 /* Mobile Navigation */
@@ -215,7 +217,7 @@ h6 {
   font-size: 24px;
   transition: all 0.4s;
   outline: none !important;
-  background-color: #149ddd;
+  background-color: #e3e5ec;
   color: #fff;
   width: 40px;
   height: 40px;
@@ -241,13 +243,12 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top center;
+  background: #fff;
   background-size: cover;
 }
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -274,14 +275,14 @@ h6 {
   color: #fff;
   margin-bottom: 50px;
   font-size: 26px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', serif;
 }
 
 #hero p span {
   color: #fff;
   padding-bottom: 4px;
   letter-spacing: 1px;
-  border-bottom: 3px solid #149ddd;
+  border-bottom: 3px solid #073c87;
 }
 
 @media (min-width: 1024px) {
@@ -325,16 +326,16 @@ section {
   margin-bottom: 20px;
   padding-bottom: 20px;
   position: relative;
-  color: #173b6c;
+  color: #073c87;
 }
 
 .section-title h2::after {
   content: "";
   position: absolute;
   display: block;
-  width: 50px;
+  width: 300px;
   height: 3px;
-  background: #149ddd;
+  background: #073c87;
   bottom: 0;
   left: 0;
 }
@@ -343,13 +344,39 @@ section {
   margin-bottom: 0;
 }
 
+
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #073c87;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 300px;
+  height: 3px;
+  background: #073c87;
+  bottom: 0;
+  left: 0;
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
+  color: #073c87;
 }
 
 .about .content ul {
@@ -370,13 +397,14 @@ section {
 .about .content ul i {
   font-size: 16px;
   margin-right: 5px;
-  color: #149ddd;
+  color: #073c87;
   line-height: 0;
 }
 
 .about .content p:last-child {
   margin-bottom: 0;
 }
+
 
 /*--------------------------------------------------------------
 # Facts
@@ -393,7 +421,7 @@ section {
 .facts .count-box i {
   display: block;
   font-size: 44px;
-  color: #149ddd;
+  color: #073c87;
   float: left;
   line-height: 0;
 }
@@ -412,21 +440,21 @@ section {
   margin: 0 0 0 60px;
   font-family: "Raleway", sans-serif;
   font-size: 14px;
-  color: #122f57;
+  color: #073c87;
 }
 
 .facts .count-box a {
   font-weight: 600;
   display: block;
   margin-top: 20px;
-  color: #122f57;
+  color: #073c87;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', serif;
   transition: ease-in-out 0.3s;
 }
 
 .facts .count-box a:hover {
-  color: #1f5297;
+  color: #073c87;
 }
 
 /*--------------------------------------------------------------
@@ -445,7 +473,7 @@ section {
   text-transform: uppercase;
   display: block;
   font-weight: 600;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', serif;
   color: #050d18;
 }
 
@@ -455,16 +483,20 @@ section {
 }
 
 .skills .progress-bar-wrap {
+  border-radius: 6px;
   background: #dce8f8;
-  height: 10px;
+  height: 20px;
 }
 
 .skills .progress-bar {
+  border-radius: 6px;
   width: 1px;
-  height: 10px;
-  transition: 0.9s;
-  background-color: #149ddd;
+  height: 20px;
+  transition: 1s;
+  background-color: #073c87;
 }
+
+
 
 /*--------------------------------------------------------------
 # Resume
@@ -489,7 +521,7 @@ section {
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', serif;
   color: #050d18;
   margin-bottom: 10px;
 }
@@ -524,14 +556,17 @@ section {
   left: -9px;
   top: 0;
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #073c87;
 }
 
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
 .portfolio .portfolio-item {
-  margin-bottom: 30px;
+  margin: 5px;
+  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 15px;
+  padding: 10px;
 }
 
 .portfolio #portfolio-flters {
@@ -542,6 +577,7 @@ section {
   background: #fff;
   border-radius: 50px;
   padding: 2px 15px;
+  
 }
 
 .portfolio #portfolio-flters li {
@@ -559,7 +595,7 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #149ddd;
+  color: #073c87;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -612,7 +648,7 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-links a+a {
-  border-left: 1px solid #37b3ed;
+  border-left: 1px solid #073c87;
 }
 
 .portfolio .portfolio-wrap:hover::before {
@@ -633,6 +669,7 @@ section {
 --------------------------------------------------------------*/
 .portfolio-details {
   padding-top: 40px;
+  border-radius: 25px;
 }
 
 .portfolio-details .portfolio-details-slider img {
@@ -649,11 +686,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #073c87;
 }
 
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #073c87;
 }
 
 .portfolio-details .portfolio-info {
@@ -707,10 +744,10 @@ section {
   justify-content: center;
   width: 54px;
   height: 54px;
-  background: #149ddd;
+  background: #122f57;
   border-radius: 50%;
   transition: 0.5s;
-  border: 1px solid #149ddd;
+  border: 1px solid #122f57;
 }
 
 .services .icon i {
@@ -724,7 +761,7 @@ section {
 }
 
 .services .icon-box:hover .icon i {
-  color: #149ddd;
+  color: #073c87;
 }
 
 .services .title {
@@ -739,7 +776,7 @@ section {
 }
 
 .services .title a:hover {
-  color: #149ddd;
+  color: #073c87;
 }
 
 .services .description {
@@ -833,11 +870,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #149ddd;
+  border: 1px solid #073c87;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #149ddd;
+  background-color: #073c87;
 }
 
 /*--------------------------------------------------------------
@@ -856,7 +893,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  color: #149ddd;
+  color: #122f57;
   float: left;
   width: 44px;
   height: 44px;
@@ -880,7 +917,7 @@ section {
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #073c87;
 }
 
 .contact .info .email p {
@@ -907,14 +944,14 @@ section {
 }
 
 .contact .info .social-links a:hover {
-  background: #149ddd;
+  background: #073c87;
   color: #fff;
 }
 
 .contact .info .email:hover i,
 .contact .info .address:hover i,
 .contact .info .phone:hover i {
-  background: #149ddd;
+  background: #073c87;
   color: #fff;
 }
 
@@ -953,7 +990,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #18d26e;
+  background: #073c87;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -973,7 +1010,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
+  border: 3px solid #073c87;
   border-top-color: #eee;
   animation: animate-loading 1s linear infinite;
 }
@@ -1002,7 +1039,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit] {
-  background: #149ddd;
+  background: #073c87;
   border: 0;
   padding: 10px 24px;
   color: #fff;
@@ -1011,7 +1048,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: #37b3ed;
+  background: #073c87;
 }
 
 @keyframes animate-loading {
