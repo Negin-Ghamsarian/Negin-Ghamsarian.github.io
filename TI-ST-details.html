@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+.papertext{
+    font-size: 28px;
+  text-align: center;
+}
+
+.paperinfotext{
+  text-align: center;
+  font-size: 18px;
+  color: #727477;
+}
+
+p.big {
+  line-height: 1.8;
+  text-align:center;
+}
+p.small {
+  line-height: 1.2;
+  text-align:center;
+}
+
+#overflowTest {
+  background: rgb(237, 237, 237);
+  color: black;
+  padding: 15px;
+  width: 100%;
+  height: 250px;
+  overflow: scroll;
+  border: 1px solid #ccc;
+}
+
+img {vertical-align: middle;
+width: 250px;
+background-color: white;
+}
+
+
+</style>
+
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <script src="https://kit.fontawesome.com/5233524c71.js" crossorigin="anonymous"></script>
+
+  <title>Portfolio Details - iPortfolio Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+   <!-- Google Fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Updated: Jul 27 2023 with Bootstrap v5.3.1
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="index.html">Negin Ghamsarian</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="https://scholar.google.com/citations?user=stgToIMAAAAJ&hl=en" class="google scholar"><i class="ai ai-google-scholar ai-1x"></i></a>
+          <a href="https://www.researchgate.net/profile/Negin-Ghamsarian" class="researchgate"><i class="ai ai-researchgate ai-1x"></i></a>
+          <a href="https://orcid.org/0000-0002-0908-8972" class="orcid"><i class="ai ai-orcid ai-1x"></i></a>
+          <a href="https://github.com/Negin-Ghamsarian" class="github"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/negin-ghamsarian-a48462259/" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index.html#news" class="nav-link scrollto"><i class="fa fa-newspaper-o"></i><span>News</span></a></li>
+          <li><a href="index.html#Research" class="nav-link scrollto"><i class="fa-solid fa-magnifying-glass"></i><span>Fields of Research</span></a></li>
+          <li><a href="index.html#education" class="nav-link scrollto"><i class="fas fa-graduation-cap"></i> <span>Education</span></a></li>  
+          <li><a href="index.html#employement" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Employement</span></a></li>
+          <li><a href="index.html#teaching" class="nav-link scrollto"><i class="fa-solid fa-chalkboard-user"></i> <span>Teaching</span></a></li>
+          <li><a href="index.html#skills" class="nav-link scrollto"><i class="fa-solid fa-code"></i> <span>Computer Skills</span></a></li>
+          <li><a href="index.html#publications" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Publications</span></a></li>
+          <li><a href="index.html#Services" class="nav-link scrollto"><i class="fas fa-book-reader"></i> <span>Academic Services</span></a></li>
+          <li><a href="index.html#Contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2></h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Paper Details</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+    
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="papertext">
+          <p class="big"><strong>Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-training</strong></p>
+        </div>
+        <div class="papertext" style="font-size: 20px;">
+          <p class="big">N. Ghamsarian<sup>1</sup>, J. Gamazo-Tejero<sup>1</sup>, P. Marquez<sup>1</sup>, S. Wolf <sup>2</sup>, M. Zinkernagel<sup>2</sup>, K. Schoeffmann<sup>3</sup>, R. Sznitman<sup>1</sup></p>
+        </div>
+        <div class="paperinfotext">
+          <p class="small"><sup>1</sup>Center for AI in Medicine, Faculty of Medicine, University of Bern, Bern, Switzerland</p>
+          <p class="small"><sup>2</sup>Department of Ophthalmology, Inselspital, Bern, Switzerland</p>
+          <p class="small"><sup>3</sup>Department of Information Technology, Klagenfurt University, Klagenfurt, Austria</p>
+          <img src="papers/miccai2023-logo.png" class="center"> 
+        </div>
+        
+
+        <p class="big">
+
+        <div class="profile">
+          <div class="social-links mt-5 text-center">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-031-43907-0_32"><i class="fa fa-link" aria-hidden="true" style="font-size: 32px; padding: 10px;"></i></a>
+            <a href="https://arxiv.org/abs/2307.16660"><i class="fa fa-file-pdf-o" aria-hidden="true" style="font-size: 32px; padding: 10px;"></i></a>
+            <a href="#poster"><i class="fa fa-file-image-o" aria-hidden="true" style="font-size: 32px; padding: 10px;"></i></a>
+            <a href="#video"><i class="fa fa-youtube-play" aria-hidden="true" style="font-size: 32px; padding: 10px;"></i></a>
+            <a href="https://github.com/Negin-Ghamsarian/Transformation-Invariant-Self-Training-MICCAI2023"><i class="fa fa-github" aria-hidden="true" style="font-size: 32px;"></i></a>
+            
+          </div>
+        </div>
+
+      </p>
+
+      
+
+      <div class="section-title">
+        <h2>Abstract</h2>
+        
+          Models capable of leveraging unlabelled data are crucial in overcoming large distribution gaps between the acquired datasets across different imaging devices and configurations. In this regard, self-training techniques based on pseudo-labeling have been shown to be highly effective for semi-supervised domain adaptation. However, the unreliability of pseudo labels can hinder the capability of self-training techniques to induce abstract representation from the unlabeled target dataset, especially in the case of large distribution gaps. Since the neural network performance should be invariant to image transformations, we look to this fact to identify uncertain pseudo labels. Indeed, we argue that transformation invariant detections can provide more reasonable approximations of ground truth. Accordingly, we propose a semi-supervised learning strategy for domain adaptation termed transformation-invariant self-training (TI-ST). The proposed method assesses pixel-wise pseudo-labels’ reliability and filters out unreliable detections during self-training. We perform comprehensive evaluations for domain adaptation using three different modalities of medical images, two different network architectures, and several alternative state-of-the-art domain adaptation methods. Experimental results confirm the superiority of our proposed method in mitigating the lack of target domain annotation and boosting segmentation performance in the target domain.
+
+      </div>
+
+      <section id="video">
+
+      <div class="section-title">
+        <h2>Presentation</h2>
+        
+        <p class="big">
+
+          <iframe width="890" height="500"  src="https://www.youtube.com/embed/XnCeeW6nTYM?si=HGmYiydI802G1dIp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </p>
+
+      </div>
+    </section>
+
+
+    <section id="poster">
+
+      <div class="section-title">
+        <h2>Poster</h2>       
+        <p class="big">
+
+          <object data="papers/Poster_Vertical_TI_ST_MICCAI23.pdf" type="application/pdf" width="100%" height="800px">
+            <p>Unable to display PDF file. <a href="papers/Poster_Vertical_TI_ST_MICCAI23.pdf">Download</a> instead.</p>
+          </object>
+
+         </p>
+      </div>
+    </section> 
+    
+    <section>
+      <div class="section-title">
+        <h2>Citation</h2>
+        
+        
+        <div id="overflowTest">
+          @InProceedings{Ghamsarian_TI_ST, <br>
+            author="Ghamsarian, Negin 
+            and Gamazo Tejero, Javier 
+            and M{\'a}rquez-Neila, Pablo 
+            and Wolf, Sebastian 
+            and Zinkernagel, Martin 
+            and Schoeffmann, Klaus 
+            and Sznitman, Raphael", 
+            title="Domain Adaptation for Medical Image Segmentation Using Transformation-Invariant Self-training", <br>
+            booktitle="Medical Image Computing and Computer Assisted Intervention -- MICCAI 2023", <br>
+            year="2023", <br>
+            publisher="Springer Nature Switzerland", <br>
+            address="Cham", <br>
+            pages="331--341", <br>
+            isbn="978-3-031-43907-0" <br>
+            }
+
+        </div>       
+      </div>
+    </section> 
+        
+
+        
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
