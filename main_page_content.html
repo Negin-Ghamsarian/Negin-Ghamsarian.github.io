@@ -174,30 +174,29 @@
       showSlides();
 
       function showSlides() {
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
+        const slides = document.getElementsByClassName("mySlides");
+        const dots = document.getElementsByClassName("dot");
 
-        // Hide all slides and remove active class from dots
+        // Hide all slides and reset active dots
         for (let i = 0; i < slides.length; i++) {
           slides[i].classList.remove("active");
-        }
-
-        for (let i = 0; i < dots.length; i++) {
+          slides[i].classList.remove("fade-in-out");
           dots[i].classList.remove("active");
         }
 
-        // Update slideIndex and activate the corresponding slide and dot
+        // Update slide index
         slideIndex++;
         if (slideIndex > slides.length) {
-          slideIndex = 1; // Reset to the first slide
+          slideIndex = 1; // Loop back to the first slide
         }
-        slides[slideIndex - 1].classList.add("active");
+
+        // Add classes for the active slide
+        slides[slideIndex - 1].classList.add("active", "fade-in-out");
         dots[slideIndex - 1].classList.add("active");
 
-        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        // Repeat the function every 3 seconds
+        setTimeout(showSlides, 3000);
       }
-
-
 
       </script>
     <!-- <div class="hero-container" data-aos="fade-in">
