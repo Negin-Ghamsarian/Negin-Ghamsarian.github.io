@@ -43,12 +43,44 @@ img {vertical-align: middle} */
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: relative;
-  margin: auto;
-  border: 2px solid rgb(255, 255, 255);
-  /* padding-left: 300px; */
+  width: 100%;
+  height: 400px; /* Adjust the height of the container as per your requirement */
+  overflow: hidden;
 }
+
+.mySlides {
+  position: relative;
+  text-align: center; /* Center content within the slide */
+  width: 100%;
+  height: 100%;
+}
+
+.img-container {
+  position: relative;
+  display: flex;
+  justify-content: center; /* Horizontally center the image */
+  align-items: center; /* Vertically center the image */
+  height: 100%;
+}
+
+.img-container img {
+  max-height: 100%; /* Make the image responsive */
+  max-width: 100%;
+}
+
+.img-container .text {
+  position: absolute;
+  bottom: 10%; /* Adjust the distance from the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%);
+  color: white; /* Use contrasting color */
+  font-size: 1.2em; /* Adjust font size */
+  background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+  padding: 10px 20px; /* Add padding for better readability */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
 
 /* Caption text */
 .text {
