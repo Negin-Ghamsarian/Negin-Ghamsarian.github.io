@@ -174,31 +174,29 @@
       showSlides();
 
       function showSlides() {
-        let i;
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
 
-        // Hide all slides
-        for (i = 0; i < slides.length; i++) {
+        // Remove active class from all slides and dots
+        for (let i = 0; i < slides.length; i++) {
           slides[i].classList.remove("active");
         }
 
-        // Remove active class from dots
-        for (i = 0; i < dots.length; i++) {
+        for (let i = 0; i < dots.length; i++) {
           dots[i].classList.remove("active");
         }
 
+        // Update slideIndex and add active class to the current slide
         slideIndex++;
         if (slideIndex > slides.length) {
-          slideIndex = 1; // Reset to first slide
+          slideIndex = 1; // Reset to the first slide
         }
-
-        // Show the active slide
         slides[slideIndex - 1].classList.add("active");
         dots[slideIndex - 1].classList.add("active");
 
-        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        setTimeout(showSlides, 2000); // Change slide every 2 seconds
       }
+
 
       </script>
     <!-- <div class="hero-container" data-aos="fade-in">
