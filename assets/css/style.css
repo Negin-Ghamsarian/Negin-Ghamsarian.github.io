@@ -1,10 +1,14 @@
-/**
-* Template Name: iPortfolio
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
+.mySlides {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for fade effect */
+}
+
+.mySlides.active {
+  opacity: 1; /* Make the active slide visible */
+  transition: opacity 1s ease-in-out;
+}
 
 /*--------------------------------------------------------------
 # General
