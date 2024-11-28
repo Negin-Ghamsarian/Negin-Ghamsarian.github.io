@@ -177,7 +177,7 @@
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
 
-        // Remove active class from all slides and dots
+        // Hide all slides and remove active class from dots
         for (let i = 0; i < slides.length; i++) {
           slides[i].classList.remove("active");
         }
@@ -186,7 +186,7 @@
           dots[i].classList.remove("active");
         }
 
-        // Update slideIndex and add active class to the current slide
+        // Update slideIndex and activate the corresponding slide and dot
         slideIndex++;
         if (slideIndex > slides.length) {
           slideIndex = 1; // Reset to the first slide
@@ -194,8 +194,9 @@
         slides[slideIndex - 1].classList.add("active");
         dots[slideIndex - 1].classList.add("active");
 
-        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
       }
+
 
 
       </script>
