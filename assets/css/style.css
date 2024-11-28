@@ -1,15 +1,4 @@
 
-.mySlides {
-  position: absolute;
-  opacity: 0;
-  transition: opacity 1s ease-in-out; /* Smooth transition for fade effect */
-}
-
-.mySlides.active {
-  opacity: 1; /* Make the active slide visible */
-  transition: opacity 1s ease-in-out;
-}
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/

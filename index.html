@@ -29,9 +29,17 @@
 
 * {box-sizing: border-box;}
 /* body {font-family: Verdana, sans-serif;} */
-.mySlides {display: none;
-  padding: 60px 0;
-  overflow: hidden}
+.mySlides {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Smooth transition for fade effect */
+}
+
+.mySlides.active {
+  opacity: 1; /* Make the active slide visible */
+  transition: opacity 1s ease-in-out;
+}
+
 img {vertical-align: middle;
 max-width: 90%;
 background-color: white;
