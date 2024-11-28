@@ -31,7 +31,35 @@
 /* body {font-family: Verdana, sans-serif;} */
 .mySlides {display: none;
   padding: 60px 0;
-  overflow: hidden}
+  overflow: hidden;
+  opacity: 0; /* Initially, all slides are invisible */
+  transition: opacity 1.5s ease-in-out; /* Smooth fade effect */
+}
+
+/* Active slide visibility */
+.mySlides.active {
+  opacity: 1; /* The active slide is fully visible */
+  z-index: 1; /* Ensure the active slide is on top */
+}
+
+/* Fading animation */
+@keyframes fade-in-out {
+  0% {
+    opacity: 0; /* Start invisible */
+  }
+  50% {
+    opacity: 1; /* Fully visible midway */
+  }
+  100% {
+    opacity: 0; /* Invisible at the end */
+  }
+}
+
+/* Add animation for active slides */
+.mySlides.fade-in-out {
+  animation: fade-in-out 3s ease-in-out;
+}
+
 img {vertical-align: middle;
 max-width: 90%;
 background-color: white;
