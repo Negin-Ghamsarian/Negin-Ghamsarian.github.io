@@ -172,36 +172,34 @@
       <script>
       let slideIndex = 0;
       showSlides();
-      
-      // function showSlides() {
-      //   let i;
-      //   let slides = document.getElementsByClassName("mySlides");
-      //   let dots = document.getElementsByClassName("dot");
-      //   for (i = 0; i < slides.length; i++) {
-      //     slides[i].style.display = "none";  
-      //   }
-      //   slideIndex++;
-      //   if (slideIndex > slides.length) {slideIndex = 1}    
-      //   for (i = 0; i < dots.length; i++) {
-      //     dots[i].className = dots[i].className.replace(" active", "");
-      //   }
-      //   slides[slideIndex-1].style.display = "block";  
-      //   dots[slideIndex-1].className += " active";
-      //   setTimeout(showSlides, 2000); // Change image every 2 seconds
-      // }
+
       function showSlides() {
         let i;
         let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+
+        // Hide all slides
         for (i = 0; i < slides.length; i++) {
-          slides[i].classList.remove("active"); // Remove the active class from all slides
+          slides[i].classList.remove("active");
         }
+
+        // Remove active class from dots
+        for (i = 0; i < dots.length; i++) {
+          dots[i].classList.remove("active");
+        }
+
         slideIndex++;
         if (slideIndex > slides.length) {
-          slideIndex = 1; // Reset to the first slide after the last one
+          slideIndex = 1; // Reset to first slide
         }
-        slides[slideIndex - 1].classList.add("active"); // Add the active class to the current slide
-        setTimeout(showSlides, 2000); // Change slide every 2 seconds
+
+        // Show the active slide
+        slides[slideIndex - 1].classList.add("active");
+        dots[slideIndex - 1].classList.add("active");
+
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
       }
+
       </script>
     <!-- <div class="hero-container" data-aos="fade-in">
       <h1>Negin  Ghamsarian</h1>
