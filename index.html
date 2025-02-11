@@ -1,7 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
+  .service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
 
+  .service-card:hover {
+      transform: translateY(-5px);
+  }
+
+  .service-card h4 {
+      color: #073c87;
+      font-size: 20px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+  }
+
+  .service-card h4 i {
+      margin-right: 10px;
+  }
+
+  .service-card ul {
+      padding-left: 20px;
+  }
+
+  .service-card ul li {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 10px;
+      list-style-type: none;
+      position: relative;
+  }
+
+  .service-card ul li::before {
+      content: "•";
+      color: #073c87;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+      margin-left: -1em;
+  }
   .research-card {
       background: #fff;
       padding: 20px;
